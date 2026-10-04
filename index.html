@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Para la más hermosa</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <header class="header">
+        <h1>Hola querida</h1>
+    </header>
+    <img src="img/focaSaludo.gif" alt="foquita linda" width="20%" height="20%">
+    <section class="section">
+        <p class="section_p"> Te amo </p>
+        <p class="section_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum dolore pariatur voluptatibus labore voluptas rerum soluta dignissimos ea sit vitae eos sequi qui aliquid velit quidem tenetur quis modi laboriosam magnam id, error cumque adipisci? Cupiditate pariatur doloribus non? </p>
+        <p class="section_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum dolore pariatur voluptatibus labore voluptas rerum soluta dignissimos ea sit vitae eos sequi qui aliquid velit quidem tenetur quis modi laboriosam magnam id, error cumque adipisci? Cupiditate pariatur doloribus non? </p>
+        <p class="section_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum dolore pariatur voluptatibus labore voluptas rerum soluta dignissimos ea sit vitae eos sequi qui aliquid velit quidem tenetur quis modi laboriosam magnam id, error cumque adipisci? Cupiditate pariatur doloribus non? </p>
+        <p class="section_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum dolore pariatur voluptatibus labore voluptas rerum soluta dignissimos ea sit vitae eos sequi qui aliquid velit quidem tenetur quis modi laboriosam magnam id, error cumque adipisci? Cupiditate pariatur doloribus non? </p>
+    </section>
+
+    <!-- Pruebas -->
+
+    <button id="btn-menu" aria-label="Abrir música">
+        <img class="img_normal" src="img/icono_cerrado.png" alt="">
+        <img class="img_hover" src="img/icono_abierto.png" alt="">
+    </button>
+ 
+    <div id="ventana" role="dialog" aria-label="Música de fondo">
+        <div class="titulo">
+            <span>Music for my luv </span>
+        </div>
+        
+        <div class="contenido">
+            <div class="rejilla">
+                <button class="opcion" data-src="musica/relajante.mp3" data-nombre="Relajante">
+                    <span class="icono">🌿</span>Relajante
+                </button>
+                <button class="opcion" data-src="musica/clasica.mp3" data-nombre="Clásica">
+                    <span class="icono">🎻</span>Clásica
+                </button>
+                <button class="opcion" data-src="musica/alegre.mp3" data-nombre="Alegre">
+                    <span class="icono">☀️</span>Alegre
+                </button>
+                <button class="opcion" data-src="musica/lluvia.mp3" data-nombre="Lluvia">
+                    <span class="icono">🌧️</span>Lluvia
+                </button>
+                <button class="opcion" data-src="musica/piano.mp3" data-nombre="Piano">
+                    <span class="icono">🎹</span>Piano
+                </button>
+                <button class="opcion" data-src="musica/guitarra.mp3" data-nombre="Guitarra">
+                    <span class="icono">🎸</span>Guitarra
+                </button>
+            </div>
+        
+            <div id="estado">Elige una música</div>
+        
+            <div class="controles">
+                <button id="btn-pausa" title="Pausar / Reanudar">⏯</button>
+                <button id="btn-parar" title="Detener">⏹</button>
+                <span>🔈</span>
+                <input type="range" id="volumen" min="0" max="1" step="0.05" value="0.5">
+            </div>
+        </div>
+    </div>
+    
+    <audio id="reproductor" loop></audio>
+</html>

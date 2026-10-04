@@ -1,0 +1,120 @@
+/* Cuerpo */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fdfd96;
+    min-height: 100vh;
+    margin: auto;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.section{
+    
+    height: 100vh;
+    padding: 1rem;
+}
+
+.section_p{
+    margin:30%;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 2s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.section_p--visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+
+/* Pruebas */
+
+
+/* Icono fijo arriba a la derecha */
+#btn-menu {
+    position: fixed; top: 16px; right: 16px; z-index: 1001;
+    width: 90px; height: 90px;
+    padding: 0; border: none; background: transparent; 
+    cursor: pointer;
+    transition: transform .2s ease, filter .2s ease;
+}
+
+#btn-menu img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  transition: opacity .3s ease;
+}
+
+/* La segunda imagen empieza invisible */
+#btn-menu .img_hover { opacity: 0; }
+
+/* Al pasar el cursor: aparece la 2ª imagen y se oculta la 1ª */
+#btn-menu:hover .img_hover,#btn-menu.activo .img_hover  { opacity: 1; }
+
+#btn-menu.activo .img_normal, #btn-menu:hover .img_normal { opacity: 0; }
+
+
+/* Ventana flotante */
+#ventana {
+    position: fixed; top: 120px; right: 16px; z-index: 1000;
+    width: 340px; max-width: calc(100% - 32px);
+    background: #fff; border-radius: 14px; overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    transform-origin: top right;
+    transform: scale(.85); opacity: 0; visibility: hidden;
+    transition: transform .2s ease, opacity .2s ease, visibility .2s;
+}
+
+#ventana.abierta { transform: scale(1); opacity: 1; visibility: visible; }
+ 
+  /* Barra de título */
+.titulo {
+    justify-content: centar; 
+    margin: 10px;
+}
+ 
+.contenido { padding: 16px; }
+ 
+  /* Cuadrícula de iconos */
+  .rejilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .opcion {
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    padding: 14px 6px; border: 2px solid #e3e3ee; border-radius: 12px;
+    background: #fafafe; cursor: pointer; font-size: 13px; color: #333;
+    transition: transform .15s, background .15s;
+}
+
+.opcion .icono { font-size: 32px; }
+.opcion:hover { transform: translateY(-2px); background: #eef; }
+.opcion.sonando { border-color: #3b3b98; background: #3b3b98; color: #fff; }
+ 
+  /* Estado y controles */
+#estado { text-align: center; margin: 14px 0 8px; font-size: 14px; color: #555; min-height: 18px; }
+
+.controles { display: flex; align-items: center; gap: 8px; }
+.controles button {
+    width: 38px; height: 38px; border-radius: 50%; border: 1px solid #ccc;
+    background: #fff; font-size: 16px; cursor: pointer;
+}
+
+.controles input[type=range] { flex: 1; }
