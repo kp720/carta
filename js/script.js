@@ -67,3 +67,28 @@ document.getElementById('btn-parar').addEventListener('click', () => {
 
 document.getElementById('volumen').addEventListener('input', e => audio.volume = e.target.value);
 audio.volume = 0.5;
+
+/* Formulario*/
+
+const formSug = document.getElementById('form-sugerencias');
+const resultado = document.getElementById('resultado');
+
+formSug.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    resultado.textContent = 'Enviando...';
+    try {
+    const resp = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(formSug)
+    });
+    const datos = await resp.json();
+    if (datos.success) {
+        resultado.textContent = '¡Gracias por tu sugerencia!';
+        formSug.reset();
+    } else {
+        resultado.textContent = 'Error: ' + datos.message;
+    }
+    } catch (err) {
+    resultado.textContent = 'No se pudo enviar. Intenta de nuevo.';
+    }
+});

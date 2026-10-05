@@ -14,10 +14,55 @@
     <img src="img/focaSaludo.gif" alt="foquita linda" width="20%" height="20%">
     <section class="section">
         <p class="section_p"> Te amo </p>
-        <p class="section_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum dolore pariatur voluptatibus labore voluptas rerum soluta dignissimos ea sit vitae eos sequi qui aliquid velit quidem tenetur quis modi laboriosam magnam id, error cumque adipisci? Cupiditate pariatur doloribus non? </p>
-        <p class="section_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum dolore pariatur voluptatibus labore voluptas rerum soluta dignissimos ea sit vitae eos sequi qui aliquid velit quidem tenetur quis modi laboriosam magnam id, error cumque adipisci? Cupiditate pariatur doloribus non? </p>
-        <p class="section_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum dolore pariatur voluptatibus labore voluptas rerum soluta dignissimos ea sit vitae eos sequi qui aliquid velit quidem tenetur quis modi laboriosam magnam id, error cumque adipisci? Cupiditate pariatur doloribus non? </p>
-        <p class="section_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum dolore pariatur voluptatibus labore voluptas rerum soluta dignissimos ea sit vitae eos sequi qui aliquid velit quidem tenetur quis modi laboriosam magnam id, error cumque adipisci? Cupiditate pariatur doloribus non? </p>
+        <p class="section_p"> Tal vez ya te lo haya dicho muchas veces, pero realmente nunca es suficiente el poder expresar todo mi amor.</p>
+        <p class="section_p"> Desde hace tiempo que nos conocemos, realmente nunca imagine poder amar tanto como lo hago hoy contigo. </p>
+        <p class="section_p"> Me apena demaciado no poder estar a tu lado, poder abarazarte y estar contigo todo el tiempo y darte tus flores amarillas. </p>
+        <p class="section_p"> Así que en lugar de eso, quise obsequiarte está página.</p>
+        <p class="section_p"> Obviamente esta más seca que la mierda, no nos vamos a mentir, y unos detalles mejor trabajados que otros...</p>
+        <p class="section_p"> Así que por esa razón al final hay un formulario para que me envies todo lo que quieras, que agregar aquí, que cambios hacer, incluso algo que me quieras decir por acá ocasionalmente.</p>
+        <p class="section_p"> Aunque mentí, hay una flor aqui para ti...</p>
+
+        <img src="img/sunflower.png" alt="Gira gira tu calzón" style="width: 10%;" height="10%">
+
+        <p class="section_p"> Tal vez cresca en el futuro... como nuestro amor.</p>
+
+        <section class="section" id="descarga">
+            <h2>Ha, y aqui esta la imagen del perrito que pediste, no la gran cosa la verdad para el tiempo que te tuve esperando, perdón</h2>
+
+            <img class="descarga_img" src="img/perritogema.jpg" alt="Perrito">
+
+            <a class="btn_descarga" href="img/perritogema.jpg" download="imagen.jpg">
+                Descargar perrito
+            </a>
+        </section>
+
+        <p class="section_p"> Love u so muchito mi niña hermosa, siempre por y para ti.</p>
+    </section>
+
+    <section class="section">
+        <form id="form-sugerencias">
+            <input type="hidden" name="access_key" value="1ff5d51f-d310-4c87-9a81-e1f943cd968b">
+            <input type="hidden" name="subject" value="Nueva sugerencia desde mi página">
+            <input type="hidden" name="from_name" value="Mi página">
+
+            <!-- Anti-spam -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+            <label>Tu hermoso nombre
+                <input type="text" name="name" required>
+            </label>
+
+            <label>Tu increible correo
+                <input type="email" name="email" required>
+            </label>
+
+            <label>Tu maravillosa sugerencia
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+            <p id="resultado"></p>
+        </form>
     </section>
 
     <!-- Pruebas -->
@@ -29,32 +74,56 @@
  
     <div id="ventana" role="dialog" aria-label="Música de fondo">
         <div class="titulo">
-            <span>Music for my luv </span>
+            <span> <strong>Music for my luv</strong> </span>
         </div>
         
         <div class="contenido">
             <div class="rejilla">
-                <button class="opcion" data-src="musica/relajante.mp3" data-nombre="Relajante">
-                    <span class="icono">🌿</span>Relajante
+                <button class="opcion" data-src="music/Message_From_Home.mp3" data-nombre="Broadcast">
+                    <div class="album">
+                        <div class="vinilo"></div>
+                        <img class="portada" src="img/albumBroadcast.jpg" alt="">
+                    </div>
+                    <span class="nombre">Message From Home</span>
                 </button>
-                <button class="opcion" data-src="musica/clasica.mp3" data-nombre="Clásica">
-                    <span class="icono">🎻</span>Clásica
+                <button class="opcion" data-src="music/Amor_Amarillo.mp3" data-nombre=" Gustavo Cerati">
+                    <div class="album">
+                        <div class="vinilo"></div>
+                        <img class="portada" src="img/albumCerati.jpg" alt="">
+                    </div>
+                    <span class="nombre">Amor Amarillo</span>
                 </button>
-                <button class="opcion" data-src="musica/alegre.mp3" data-nombre="Alegre">
-                    <span class="icono">☀️</span>Alegre
+                <button class="opcion" data-src="music/Take_Me_Home.mp3" data-nombre="Pink Pantheress">
+                    <div class="album">
+                        <div class="vinilo"></div>
+                        <img class="portada" src="img/albumPink.jpg" alt="">
+                    </div>
+                    <span class="nombre">Take Me Home</span>
                 </button>
-                <button class="opcion" data-src="musica/lluvia.mp3" data-nombre="Lluvia">
-                    <span class="icono">🌧️</span>Lluvia
+                <button class="opcion" data-src="music/Face_To_Face.mp3" data-nombre="Daft Punk">
+                    <div class="album">
+                        <div class="vinilo"></div>
+                        <img class="portada" src="img/albumDaft.jpg" alt="">
+                    </div>
+                    <span class="nombre">Face To Face</span>
                 </button>
-                <button class="opcion" data-src="musica/piano.mp3" data-nombre="Piano">
-                    <span class="icono">🎹</span>Piano
+                <button class="opcion" data-src="music/Dead_Weight.mp3" data-nombre="Jack Stauber">
+                    <div class="album">
+                        <div class="vinilo"></div>
+                        <img class="portada" src="img/albumJack.jpg" alt="">
+                    </div>
+                    <span class="nombre">Dead Weight</span>
                 </button>
-                <button class="opcion" data-src="musica/guitarra.mp3" data-nombre="Guitarra">
-                    <span class="icono">🎸</span>Guitarra
+                <button class="opcion" data-src="music/Estoy_Azulado.mp3" data-nombre="Soda Stereo">
+                    <div class="album">
+                        <div class="vinilo"></div>
+                        <img class="portada" src="img/albumSoda.jpg" alt="">
+                    </div>
+                    <span class="nombre">Estoy Azulado</span>
                 </button>
             </div>
         
-            <div id="estado">Elige una música</div>
+            <div id="estado">Elige un album</div>
         
             <div class="controles">
                 <button id="btn-pausa" title="Pausar / Reanudar">⏯</button>
@@ -66,4 +135,7 @@
     </div>
     
     <audio id="reproductor" loop></audio>
+
+    
+
 </html>
